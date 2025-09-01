@@ -7,10 +7,9 @@ pipeline {
             steps {
                 
                     sh 'echo "Building the project..."'
-                    sh 'ls -la'
                     sh 'cd /home/jtiongzon/node-webapp'
                     sh 'docker build .'
-		    sh 'ip addr show'
+                    sh 'docker run -p 3000:3000 node-webapp'
                 
             }
         }
