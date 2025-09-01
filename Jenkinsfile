@@ -10,7 +10,7 @@ pipeline {
                     sh 'ls -la'
                     sh 'cd /home/jtiongzon/node-webapp'
                     sh 'docker build .'
-
+		    sh 'ip addr show'
                 
             }
         }
